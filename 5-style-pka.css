@@ -1,0 +1,25 @@
+
+
+
+.BT-all {
+    position: fixed;
+    z-index: 9950;}
+.B11 {
+    position: absolute;
+    display: block;
+    width: 200px; height: 400px;
+    opacity: 1;
+    top: -1000px; 
+    left: -10px;
+    z-index: 9950;
+}
+.B12 {
+    position: relative;
+    display: block;
+    width: 200px; height: 400px;
+    opacity: 1;
+    top: -1000px; 
+    right: -200px;
+    transform: scaleX(-1);
+    z-index: 9950;
+}

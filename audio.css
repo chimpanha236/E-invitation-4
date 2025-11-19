@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Moul&family=Moulpali&family=Siemreap&display=swap');
+
+.font-1 { font-family: "Moul", cursive; }
+.font-2 { font-family: "Moulpali", cursive; }
+.font-3 { font-family: "Siemreap", sans-serif; }
+
+/* ===== MUSIC CONTAINER ===== */
+.music {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    pointer-events: none;
+}
+
+/* ===== AUDIO PLAYER ===== */
+.audio-player {
+    padding: 8px 15px;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* ✅ រក្សាទុក space-between */
+    pointer-events: auto;
+    width: 100%;
+    max-width: 575px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    gap: 8px;
+}
+
+/* ===== AUDIO BUTTONS ===== */
+.audio-btn {
+    padding: 4px 8px;
+    background: rgba(249, 116, 116, 0.9);
+    color: #1c04f1;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    pointer-events: auto;
+    min-width: 40px;
+    flex: 0 1 auto;
+    height: 22px;
+    white-space: nowrap;
+}
+
+
+.audio-btn:hover {
+    background: rgb(206, 195, 1);
+    transform: translateY(-1px);
+    box-shadow: 0 3px 8px rgba(243, 1, 1, 0.3);
+}
+.audio-btn:active {
+    transform: translateY(0);
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* Mobile Small (320px - 575px) */
+@media (max-width: 575px) {
+    .audio-player {
+        padding: 3px 6px;
+        gap: 4px;
+        max-width: 575px;
+        margin: 0 auto 0;
+        border-radius: 15px 15px 0 0;
+        background: rgba(255, 255, 255, 0.1);
+    }
+    
+    .audio-btn {
+        min-width: 35px;
+        max-width: 60px;
+        padding: 3px 5px;
+        font-size: 8px;
+        height: 16px;
+        border-radius: 8px;
+        gap: 2px;
+        flex: 0 1 auto;
+    }
+    
+    /* ✅ កែសម្រាប់រុញទៅគៀននៅលើ mobile */
+    .audio-btn-left {
+        margin-left: 20px; /* ✅ តូចជាងនៅលើ mobile */
+    }
+    
+    .audio-btn-right {
+        margin-right: 20px; /* ✅ តូចជាងនៅលើ mobile */
+    }
+    
+    /* ✅ កែសម្រួលសម្រាប់អេក្រង់តូចជាង */
+    @media (min-width: 375px) {
+        .audio-player {
+            max-width: 375px;
+            padding: 2px 4px;
+        }
+        
+        .audio-btn {
+            min-width: 30px;
+            max-width: 50px;
+            font-size: 7px;
+            height: 14px;
+        }
+        
+        .audio-btn-left {
+            margin-left: 20px; /* ✅ តូចជាងទៀត */
+        }
+        
+        .audio-btn-right {
+            margin-right: 20px; /* ✅ តូចជាងទៀត */
+        }
+    }
+}
+
+
+
+/* ===== ACCESSIBILITY ===== */
+.audio-btn:focus {
+    outline: 2px solid #038712;
+    outline-offset: 1px;
+}
+
+.audio-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}

@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Moul&family=Moulpali&family=Siemreap&display=swap');
+
+/* ===== FONT FAMILIES - IMPROVED ===== */
+.font-1 { 
+    font-family: "Moul", cursive;
+    font-weight: normal;
+}
+
+.font-2 {
+    font-family: "Moulpali", cursive;
+    font-weight: normal;
+}
+
+.font-3 {
+    font-family: "Siemreap", sans-serif;
+    font-weight: normal;
+}
+
+/* ===== CONTENT CONTAINER ===== */
+.content-container {
+    position: relative;
+    padding: 20px 15px;
+    padding-top: 60px;
+    padding-bottom: 200px;
+    width: 100%;
+    line-height: 1.6; /* ✅ កែពី 30px មក 1.6 សម្រាប់ readability */
+}
+
+/* ===== TEXT SPACING ===== */
+.txt-2, .txt-3, .txt-4, .txt-5, .txt-6 {
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+/* ===== TEXT GROUP A - IMPROVED ===== */
+.text-a1, .text-a3, .text-a5, .text-a7 {
+    color: rgb(246, 249, 246); 
+    text-shadow: 1px 1px rgb(248, 191, 5); 
+    text-align: center; 
+    margin-left: 5px;
+    margin-right: 5px; 
+    position: relative;
+    z-index: 10;
+    line-height: 1.5;
+}
+
+.text-a2, .text-a4, .text-a6, .text-a8 {
+    color: rgb(2, 200, 245); 
+    text-shadow: 1px 1px rgb(251, 197, 3); 
+    text-align: center; 
+    margin-left: 5px; 
+    margin-right: 5px; 
+    position: relative;
+    z-index: 10;
+    line-height: 1.5;
+}
+
+/* ===== TEXT GROUP B - IMPROVED ===== */
+.text-b1 {
+    color: rgb(249, 248, 246); 
+    text-shadow: 1px 1px rgb(99, 71, 80); 
+    position: relative; 
+    z-index: 10;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.text-b2, .text-b3 {
+    color: rgb(249, 248, 246); 
+    text-shadow: 1px 1px rgb(99, 71, 80); 
+    position: relative; 
+    text-align: center ;
+    z-index: 10;
+    font-size: clamp(0.875rem, 3vw, 1rem);
+    line-height: 1.5;
+    margin: 10px 5px;
+}
+
+.text-b4 {
+    color: rgb(249, 248, 246); 
+    text-shadow: 1px 1px rgb(99, 71, 80); 
+    position: relative; 
+    z-index: 10;
+    text-align: center;
+    font-size: clamp(0.875rem, 3vw, 1rem);
+    line-height: 1.5;
+}
+
+.text-b5 {
+    color: rgb(2, 200, 245); 
+    text-shadow: 1px 1px rgb(251, 197, 3); 
+    position: relative; 
+    top: 10px;
+    z-index: 10;
+    text-align: left;
+    font-size: clamp(0.875rem, 3vw, 1rem);
+    line-height: 1.5;
+}
+
+.text-b6 {
+    color: rgb(2, 200, 245); 
+    text-shadow: 1px 1px rgb(251, 197, 3); 
+    position: relative; 
+    z-index: 10;
+    text-align: right;
+    font-size: clamp(0.875rem, 3vw, 1rem);
+    line-height: 1.5;
+}
+.text-b7 {
+    color: rgb(249, 248, 246); 
+    text-shadow: 1px 1px rgb(99, 71, 80); 
+    position: relative; 
+    z-index: 10;
+    text-align: center;
+    line-height: 1.5;
+}
+.text-b8 {
+    color: rgb(249, 248, 246); 
+    text-shadow: 1px 1px rgb(99, 71, 80); 
+    position: relative; 
+    z-index: 10;
+    text-align: center;
+    line-height: 1.6;}
+
+/* ===== TEXT GROUP E ===== */
+.txt-e1, .txt-e2, .txt-e3, .txt-e4, .txt-e5,.txt-e6 {
+    color: aqua;
+    text-align: center;
+    position: relative;
+    line-height: 1.4;
+    margin: 15px 0;
+}
+/* ===== THZ SECTION - បានកែទីតាំង ===== */
+.Thz-section {
+    display: block;
+    position: relative; /* ✅ កែពី absolute មក relative */
+    color: aliceblue;
+    background-color: rgba(71, 211, 165, 0.5);
+    border-radius: 15px;
+    padding: 10px;
+    border: 2px solid #8f7d7d;
+    font-family: "siemreap";
+    text-align: center;
+    z-index: 1000;
+    width: 98%; /* ✅ បន្ថែម width */
+    margin-top: 20px; /* ✅ បន្ថែមចន្លោះពីលើ */
+}
+
+.thz {
+    position: relative; /* ✅ កែពី absolute មក relative */
+    width: 100%;
+}
+
+/* ===== RESPONSIVE FIXES ===== */
+/* 📊 TABLET - 575px ឡើងទៅ */
+@media (min-width: 575px) {
+    .content-container {
+        padding: 15px 10px;
+        padding-top: 50px;
+        padding-bottom: 150px;
+        line-height: 1.5;
+    }
+    .text-a1, .text-a3, .text-a5, .text-a7 {
+    font-size: 20px; 
+    }
+    .text-a2, .text-a4, .text-a6, .text-a8 {
+    font-size: 23px;
+    }
+
+    .text-b1,.text-b7,.text-b8 {
+        font-size: 20px;
+        line-height: 1.7;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    
+    .text-b2, .text-b3 {
+        word-spacing: 50px;
+        letter-spacing: 0.5px;
+        font-size: 20px;
+    }
+    .txt-e1{
+        font-size: 25px;
+    }
+    .txt-e2,.txt-e4{
+        font-size: 20px;
+    }
+    .txt-e3,.txt-e5,.txt-e6{
+        font-size: 20px;
+    }
+    .txt-e4,.txt-e5,.txt-e6{
+        top: 20px;
+        line-height: 10px;
+    }
+    .text-b8{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .Thz-section {
+        font-size: 20px;
+        padding: 20px;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 60px;
+        margin-top: 30px; /* ✅ បន្ថែមសម្រាប់ tablet */
+    }
+}
+.text-b5 {
+        position: relative;
+        font-size: 22px;
+        left: 0;
+        opacity: 0;
+}
+
+.text-b5.animate-visible {
+    opacity: 1;
+    animation: animation-txt-b5 2s ease-in-out forwards;
+}
+@keyframes animation-txt-b5 {
+    0% {
+        left: 0;
+        opacity: 0;
+    }
+    100% {
+        left: 95px;
+        opacity: 1;
+    }
+}
+.text-b6 {
+    position: absolute;
+    font-size: 22px;
+    right: 0px;
+    opacity: 0;
+    /* ដក animation ចេញពីទីនេះ */
+}
+.text-b6.animate-visible {
+    opacity: 1;
+    animation: animation-txt-b6 2s ease-in-out forwards;
+}
+@keyframes animation-txt-b6 {
+    0% {
+        right: 0px;
+        opacity: 0;
+    }
+    100% {
+        right: 220px;
+        opacity: 1;
+    }
+}
+/* 📱 PHONE - ទូរស័ព្ទតូចៗ (រហូតដល់ 574px) */
+@media (max-width: 574px) {
+    .content-container {
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+        line-height: 1.7;
+    }
+    .text-a1, .text-a3, .text-a5, .text-a7 {
+    font-size: 15px; 
+    }
+    .text-a2, .text-a4, .text-a6, .text-a8 {
+    font-size: 18px;
+    }
+    .text-b1,.text-b7 {
+        font-size: 13px;
+        line-height: 1.7;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+     .text-b2, .text-b3 {
+        word-spacing: 80px;
+        letter-spacing: 0.5px;
+    }
+    .txt-e1{
+        font-size: 17px;
+    }
+    .txt-e2,.txt-e4{
+        font-size: 15px;
+    }
+    .txt-e3,.txt-e5{
+        font-size: 16px;
+    }
+    .txt-e4,.txt-e5,.txt-e6{
+        top: 10px;
+        line-height: 10px;
+        bottom: 20px;
+    }
+    .text-b8{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .Thz-section {
+        font-size: 15px;
+        padding: 20px;
+        margin-left: 5px;
+        margin-right: 6px;
+        margin-bottom: 60px;
+        margin-top: 30px; /* ✅ បន្ថែមសម្រាប់ tablet */
+    }
+.text-b5 {
+        position: relative;
+        font-size: 18px;
+        left: 0;
+        opacity: 0;
+}
+
+.text-b5.animate-visible {
+    opacity: 1;
+    animation: animation-txt-b5 2s ease-in-out forwards;
+}
+@keyframes animation-txt-b5 {
+    0% {
+        left: 0;
+        opacity: 0;
+    }
+    100% {
+        left: 35px;
+        opacity: 1;
+    }
+}
+.text-b6 {
+    position: absolute;
+    font-size: 18px;
+    right: 0px;
+    opacity: 0;
+    /* ដក animation ចេញពីទីនេះ */
+    }
+.text-b6.animate-visible {
+    opacity: 1;
+    animation: animation-txt-b6 2s ease-in-out forwards;
+    }
+    @keyframes animation-txt-b6 {
+    0% {
+        right: 0px;
+        opacity: 0;
+    }
+    100% {
+        right: 70px;
+        opacity: 1;
+    }
+    }}

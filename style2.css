@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Moul&family=Moulpali&family=Siemreap&display=swap');
+
+/* ===== FONT FAMILIES ===== */
+.font-1 { font-family: "Moul", sans-serif; }
+.font-2 { font-family: "Moulpali", sans-serif; }
+.font-3 { font-family: "Siemreap", sans-serif; }
+
+/* ===== RESET & BASE STYLES ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(1, 60, 12);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* ផ្លាស់ប្តូរពី center ទៅ flex-start */
+    min-height: 100vh;
+}
+
+/* ===== MAIN CONTAINER - SCROLLABLE ===== */
+.body-2 {
+    position: relative;
+    width: 100%;
+    max-width: 575px;
+    min-width: 375px;
+    min-height: 100vh; /* ផ្លាស់ប្តូរពី height ទៅ min-height */
+    background-color: rgb(1, 60, 12);
+    background-image: url(/kbach-40.png);
+    background-size: 40%;
+    background-position: center;
+    background-repeat: repeat;
+    margin: 0 auto;
+    overflow-x: hidden;
+    overflow-y: auto; /* អនុញ្ញាតឱ្យ scroll បញ្ឈរ */
+    z-index: 1;
+}
+
+/* ===== CONTENT CONTAINER - CENTERED ===== */
+.content-container {
+    position: relative; /* ផ្លាស់ប្តូរពី absolute */
+    width: 90%;
+    max-width: 400px;
+    margin: 50vh auto 50px; /* ប្រើ margin សម្រាប់តម្រឹមកណ្តាល */
+    transform: translateY(-50%); /* តម្រឹមកណ្តាលបញ្ឈរ */
+    text-align: center;
+    z-index: 100;
+}
+
+/* ===== TOP SECTION - FIXED ===== */
+.top {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 575px;
+    min-width: 375px;
+    height: 100vh; /* កំណត់កម្ពស់ */
+    z-index: 9999;
+    pointer-events: none;
+}
+
+.kbach-top {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* ផ្លាស់ប្តូរពី contain */
+    z-index: 9999;
+}
+
+/* ===== DECORATION ELEMENTS ===== */
+.pka-1 {
+    position: absolute;
+    width: 10rem;
+    height: auto;
+    opacity: 1;
+    top: 0px;
+    left: 0px;
+    transform: rotate(180deg);
+    z-index: 9999;
+}
+
+.pka-2 {
+    position: absolute;
+    width: 10rem;
+    height: auto;
+    opacity: 1;
+    top: 0px;
+    right: 0px;
+    transform: rotate(270deg);
+    z-index: 9999;
+}
+
+/* ===== LOGO - CENTERED ===== */
+.logo {
+    width: 30%;
+    min-width: 100px;
+    max-width: 150px;
+    height: auto;
+    margin: 0 auto 20px;
+    display: block;
+    z-index: 100;
+}
+
+/* ===== TEXT ELEMENTS - CENTERED ===== */
+.txt-wedding {
+    font-family: "Moulpali", sans-serif;
+    color: aqua;
+    z-index: 70;
+    text-align: center;
+    animation: animation-txt 2s ease-in-out forwards;
+}
+
+@keyframes animation-txt {
+    0% {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.txt-wedding2 {
+    font-family: "Moulpali", sans-serif;
+    color: aqua;
+    z-index: 70;
+    text-align: center;
+    animation: animation-txt2 2s ease-in-out forwards;
+}
+
+@keyframes animation-txt2 {
+    0% {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* ===== BUTTON ===== */
+.click-back {
+    position: fixed;
+    height: auto;
+    z-index: 11000;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: animation-click-back 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+}
+
+@keyframes animation-click-back {
+    0% {
+        transform: translateX(-50%) scale(0.9);
+    }
+    50% {
+        transform: translateX(-50%) scale(1.1);
+    }
+    100% {
+        transform: translateX(-50%) scale(0.9);
+    }
+}
+
+/* Map area*/
+    .map-content{
+       display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 10;
+        margin-bottom: 2vw;
+        }
+    a{text-decoration: none;}
+
+    .maps{
+        animation: zoomInOut-map 1s ease-in-out infinite alternate
+    }
+    @keyframes zoomInOut-map {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            } }
+    .map-txt{
+        color: rgb(57, 245, 5);
+        text-align: center;
+    }
+
+/* ===== ADDITIONAL CONTENT FOR SCROLL TEST ===== */
+.additional-content {
+    position: relative;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    z-index: 100;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* 📱 PHONE - ទូរស័ព្ទតូចៗ (រហូតដល់ 574px) */
+@media (max-width: 574px) {
+    .body-2 {
+        width: 100%;
+        min-height: 100vh;
+        border-radius: 15px; /* បន្ថែម 'px' */
+        background-size: 60%;
+    }
+    .pka-1 {
+    width: 8rem;
+}
+
+.pka-2 {
+    width: 8rem;
+}
+    
+    .txt-wedding {
+        font-size: 25px;
+        margin-top: -590px;
+    }
+    .txt-wedding2 {
+        font-size: 18px;
+    }
+    
+    .logo {
+        width: 30%;
+        height: auto;
+        margin: 160px auto 0px;
+    }
+    .click-back{
+        width: 60px;
+        bottom: 0px;
+    }
+    .maps{
+        width: 100px;
+        margin: 40px 50px 20px;
+    }
+    
+    .content-container {
+        margin: 45vh auto 50px;
+    }
+}
+
+/* 📊 TABLET - 575px ឡើងទៅ */
+@media (min-width: 575px) {
+    .body-2 {
+        width: 100%;
+        min-height: 100vh;
+        border-radius: 5px; /* បន្ថែម 'px' */
+        background-size: 60%;
+    }
+    
+    .txt-wedding {
+        font-size: 35px;
+        margin-top: -530px;
+    }
+    .txt-wedding2 {
+        font-size: 25px;
+    }
+    
+    .logo {
+        width: 30%;
+        height: auto;
+        margin: 230px auto 20px;
+    }
+    .click-back{
+        width: 90px;
+        bottom: 5px;
+    }
+    .content-container {
+        width: 85%;
+        margin: 40vh auto 50px;
+    }
+    .maps{
+        width: 150px;
+        margin: 40px auto 20px;
+    }
+}
