@@ -190,7 +190,7 @@ async function addCommentToFirebase(name, email, comment) {
             throw new Error('ឈ្មោះត្រូវតែមានចន្លោះពី ២ ទៅ ៥០ តួអក្សរ');
         }
         
-        if (comment.length < 5 || comment.length > 500) {
+        if (comment.length < 1 || comment.length > 500) {
             throw new Error('សារត្រូវតែមានចន្លោះពី ៥ ទៅ ៥០០ តួអក្សរ');
         }
         
