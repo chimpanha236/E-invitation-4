@@ -435,6 +435,10 @@ textarea {
         align-items: flex-start;
         gap: 5px;
     }
+     .insert-name{
+        font-size: 13px;
+
+    }    
     
     /* ✅ កែត្រង់នេះ - ប៊ូតុងនៅទន្ទឹមគ្នា */
     .comment-actions {
