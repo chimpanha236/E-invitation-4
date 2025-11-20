@@ -83,7 +83,7 @@ input[type="email"]:focus,
 textarea:focus {
     outline: none;
     border-color: #ff6b6b;
-    box-shadow: 0 0 10px rgba(255, 107, 107, 0.2);
+    box-shadow: 0 0 20px rgba(23, 2, 251, 1);
 }
 
 textarea {
@@ -132,7 +132,7 @@ textarea {
 /* តារាងសារ */
 .comments-list {
     border-top: 2px solid #ffcdd2;
-    padding-top: 25px;
+    padding-top: 10px;
 }
 
 /* ចលនាសារ */
@@ -150,8 +150,8 @@ textarea {
 /* សារនីមួយៗ */
 .comment-item {
     background: #be9e9e;
-    padding: 10px;
-    margin-bottom: 10px;
+    padding: 1px;
+    margin-bottom: 5px;
     border-radius: 10px;
     border-left: 5px solid #0202d8;
     position: relative;
@@ -168,7 +168,7 @@ textarea {
 
 .comment-header strong {
     color: #f8f8fa;
-    font-size: 20px;
+    font-size: 18px;
     text-decoration: underline;
 }
 
@@ -179,9 +179,9 @@ textarea {
 
 .comment-content {
     color: white;
-    line-height: 1.6;
-    margin-bottom: 12px;
-    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 5px;
+    font-size: 15px;
 }
 
 .comment-email {
@@ -214,30 +214,32 @@ textarea {
 .edit-btn {
     background: linear-gradient(25deg, #e6f205, #ffb74d);
     color: white;
-    padding: 8px 16px;
+    padding: 5px 10px;
     border: none;
     border-radius: 6px;
     cursor: pointer;
+    font-family: "siemreap";
     font-size: 14px;
     transition: all 0.3s;
     font-weight: bold;
 }
 
 .edit-btn:hover {
-    background: linear-gradient(45deg, #938e88, #ff9800);
+    background: linear-gradient(45deg, #028023, #03017f);
     transform: translateY(-1px);
     box-shadow: 0 3px 8px rgba(255, 167, 38, 0.3);
 }
 
 /* ប៊ូតុងលុប */
 .delete-btn {
-    background: linear-gradient(45deg, #f44336, #ef5350);
+    background: linear-gradient(45deg, #9f534e, #ef5350);
     color: white;
-    padding: 8px 16px;
+    padding: 5px 10px;
     border: none;
     border-radius: 6px;
     cursor: pointer;
     font-size: 14px;
+    font-family: "siemreap";
     transition: all 0.3s;
     font-weight: bold;
 }
@@ -433,24 +435,20 @@ textarea {
         align-items: flex-start;
         gap: 5px;
     }
-     .insert-name{
-        font-size: 10px;
-    }    
-    .comment-actions,
-    .edit-actions {
-        flex-direction: column;
-        gap: 8px;
-    }
-    h3{
-        font-size: 15px;
-    }
     
+    /* ✅ កែត្រង់នេះ - ប៊ូតុងនៅទន្ទឹមគ្នា */
+    .comment-actions {
+        flex-direction: row;  /* ✅ ផ្លាស់ពី column មក row */
+        gap: 8px;
+        justify-content: flex-end;
+        margin-top: 15px;
+    }
+
     .edit-btn,
-    .delete-btn,
-    .cancel-edit-btn,
-    .save-edit-btn {
-        width: 100%;
-        text-align: center;
+    .delete-btn {
+        width: auto;  /* ✅ កែពី 100% មក auto */
+        padding: 8px 12px;  /* ✅ កែ padding ឲ្យសម */
+        font-size: 12px;    /* ✅ កែ font-size បើត្រូវការ */
     }
     
     .comment-item {
@@ -475,7 +473,8 @@ textarea {
     }
     
     .insert-name{
-        font-size: 12px;
+        font-size: 15px;
+
     }    
 
     /* ===== ប៊ូតុងសកម្មភាព ===== */
@@ -484,6 +483,7 @@ textarea {
         gap: 10px;
         justify-content: flex-end;
         margin-top: 15px;
+        flex-direction: row;  /* ✅ បន្ថែមនេះ */
     }
 
     /* ប៊ូតុងកែសម្រួល */
@@ -517,19 +517,7 @@ textarea {
         gap: 5px;
     }
     
-    .comment-actions,
-    .edit-actions {
-        flex-direction: column;
-        gap: 8px;
-    }
-    
-    .edit-btn,
-    .delete-btn,
-    .cancel-edit-btn,
-    .save-edit-btn {
-        width: 100%;
-        text-align: center;
-    }
+   
     
     .comment-item {
         padding: 15px;
@@ -557,7 +545,7 @@ textarea {
 
 /* ពន្លឺពេល hover សម្រាប់សារ */
 .comment-item:hover {
-    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.15);
+    box-shadow: 0 4px 15px rgb(15, 0, 223);
     transform: translateY(-1px);
     transition: all 0.3s ease;
 }
