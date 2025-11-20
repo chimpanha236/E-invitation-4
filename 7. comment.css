@@ -433,7 +433,9 @@ textarea {
         align-items: flex-start;
         gap: 5px;
     }
-    
+     .insert-name{
+        font-size: 10px;
+    }    
     .comment-actions,
     .edit-actions {
         flex-direction: column;
@@ -473,8 +475,7 @@ textarea {
     }
     
     .insert-name{
-        font-size: 15px;
-
+        font-size: 12px;
     }    
 
     /* ===== ប៊ូតុងសកម្មភាព ===== */
